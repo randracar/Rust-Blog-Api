@@ -1,0 +1,2 @@
+{type error}: FromStaticSqlRow<(Integer, diesel::sql_types::Text, diesel::sql_types::Text, diesel::sql_types::Text, diesel::sql_types::Text, diesel::sql_types::Bool), Pg>
+SelectStatement<FromClause<table>, query_builder::select_clause::DefaultSelectClause<FromClause<table>>, query_builder::distinct_clause::NoDistinctClause, query_builder::where_clause::WhereClause<diesel::expression::grouped::Grouped<diesel::expression::operators::Eq<columns::id, diesel::expression::bound::Bound<Integer, i32>>>>>
