@@ -192,12 +192,6 @@ async fn create_post(
     post_data: web::Json<PostRequest>,
     auth: Authenticated,
 ) -> Result<HttpResponse, actix_web::Error> {
-
-    /* For some reason, using just
-
-    let claims = req.extensions().get::<Claims>()
-
-    provided a bug because of memory ownership, which I fixed by doing this. */
     
     post_data.validate().map_err(|e| actix_web::error::ErrorInternalServerError(e))?;
 
